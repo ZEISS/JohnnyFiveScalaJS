@@ -17,7 +17,6 @@ crossScalaVersions := Seq("2.10.6", "2.11.11", "2.12.6")
 scalacOptions ++= Seq("-P:scalajs:sjsDefinedByDefault")
 
 libraryDependencies ++= Seq(
-  "io.monix" %%% "monix" % "3.0.0-RC1",
   "org.scalactic" %%% "scalactic" % "3.0.5" % "test",
   "org.scalatest" %%% "scalatest" % "3.0.5" % "test",
 )
