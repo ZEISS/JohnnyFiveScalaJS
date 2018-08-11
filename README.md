@@ -4,7 +4,7 @@
 
 [![Build Status](https://travis-ci.org/ZEISS/JohnnyFiveScalaJS.svg?branch=master)](https://travis-ci.org/ZEISS/JohnnyFiveScalaJS)
 
-This is a Scala adapter to [Johhny-Five](http://johnny-five.io).
+This is a Scala adapter to [Johnny-Five](http://johnny-five.io).
 
 Example usage:
 
