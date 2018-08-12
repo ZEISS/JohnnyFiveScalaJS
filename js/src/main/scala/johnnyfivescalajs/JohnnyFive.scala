@@ -619,7 +619,9 @@ object JohnnyFive extends js.Object {
     var address: js.UndefOr[Double] = js.undefined
     var isAnode: js.UndefOr[Boolean] = js.undefined
   }
-
+  
+  def Led(option: LedOption): Led = js.native
+  
   @js.native
   class Led protected() extends js.Object {
     def this(option: Double | LedOption) = this()
