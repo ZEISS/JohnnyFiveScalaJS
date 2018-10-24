@@ -10,7 +10,7 @@ import scala.scalajs.js.{Date, |}
 object JohnnyFive extends js.Object {
 
 
-  @ScalaJSDefined
+  
   trait BoardOption extends js.Object {
     val id: js.UndefOr[Double | String] = js.undefined
     val port: js.UndefOr[String] = js.undefined
@@ -64,7 +64,7 @@ object JohnnyFive extends js.Object {
   }
 
 
-  @ScalaJSDefined
+  
   trait ButtonOption extends js.Object {
     var pin: js.UndefOr[Double | String] = js.undefined
     var invert: js.UndefOr[Boolean] = js.undefined
@@ -101,7 +101,7 @@ object JohnnyFive extends js.Object {
     var `type`: js.UndefOr[String] = js.undefined
   }
 
-  @ScalaJSDefined
+  
   trait PinState extends js.Object {
     var supportedModes: js.UndefOr[js.Array[Double]] = js.undefined
     var mode: js.UndefOr[Double] = js.undefined
@@ -143,19 +143,19 @@ object JohnnyFive extends js.Object {
   }
 
 
-  @ScalaJSDefined
+  
   trait AccelerometerOption extends js.Object {
     var controller: js.UndefOr[String] = js.undefined
   }
 
 
-  @ScalaJSDefined
+  
   trait AccelerometerGeneralOption extends js.Object {
     var controller: js.UndefOr[String] = js.undefined
   }
 
 
-  @ScalaJSDefined
+  
   trait AccelerometerAnalogOption extends AccelerometerGeneralOption {
     var pins: js.UndefOr[js.Array[String]] = js.undefined
     var sensitivity: js.UndefOr[Double] = js.undefined
@@ -165,13 +165,13 @@ object JohnnyFive extends js.Object {
   }
 
 
-  @ScalaJSDefined
+  
   trait AccelerometerMPU6050Option extends AccelerometerGeneralOption {
     var sensitivity: js.UndefOr[Double] = js.undefined
   }
 
 
-  @ScalaJSDefined
+  
   trait AccelerometerMMA7361Option extends AccelerometerGeneralOption {
     var sleepPin: js.UndefOr[Double | String] = js.undefined
   }
@@ -214,7 +214,7 @@ object JohnnyFive extends js.Object {
   }
 
 
-  @ScalaJSDefined
+  
   trait AltimeterOption extends js.Object {
     var controller: js.UndefOr[String] = js.undefined
     var address: js.UndefOr[Double] = js.undefined
@@ -274,7 +274,7 @@ object JohnnyFive extends js.Object {
   }
 
 
-  @ScalaJSDefined
+  
   trait CompassOption extends js.Object {
     var controller: js.UndefOr[String] = js.undefined
     var gauss: js.UndefOr[Double] = js.undefined
@@ -295,16 +295,16 @@ object JohnnyFive extends js.Object {
     def on(event: String, cb: js.Function1[js.Any, Unit]): this.type = js.native
   }
 
-  @ScalaJSDefined
+  
   trait Bearing extends js.Object {
-    var name: String = js.native
-    var abbr: String = js.native
-    var low: Double = js.native
-    var high: Double = js.native
-    var heading: Double = js.native
+    var name:  js.UndefOr[String] = js.undefined
+    var abbr: js.UndefOr[String] = js.undefined
+    var low: js.UndefOr[Double] = js.undefined
+    var high: js.UndefOr[Double] = js.undefined
+    var heading: js.UndefOr[Double] = js.undefined
   }
 
-  @ScalaJSDefined
+  
   trait ESCOption extends js.Object {
     var pin: js.UndefOr[Double | String] = js.undefined
     var range: js.UndefOr[js.Array[Double]] = js.undefined
@@ -383,19 +383,19 @@ object JohnnyFive extends js.Object {
     def uint32(b24: Double, b16: Double, b8: Double, b0: Double): Double = js.native
   }
 
-  @ScalaJSDefined
+  
   trait GyroGeneralOption extends js.Object {
     var controller: js.UndefOr[String] = js.undefined
   }
 
-  @ScalaJSDefined
+  
   trait GyroAnalogOption extends GyroGeneralOption {
     var pins: js.UndefOr[js.Array[String]] = js.undefined
     var sensitivity: js.UndefOr[Double] = js.undefined
     var resolution: js.UndefOr[Double] = js.undefined
   }
 
-  @ScalaJSDefined
+  
   trait GyroMPU6050Option extends GyroGeneralOption {
     var sensitivity: js.UndefOr[Double] = js.undefined
   }
@@ -436,7 +436,7 @@ object JohnnyFive extends js.Object {
     def recalibrate(): Unit = js.native
   }
 
-  @ScalaJSDefined
+  
   trait HygrometerOption extends js.Object {
     var controller: js.UndefOr[String] = js.undefined
     var freq: js.UndefOr[Double] = js.undefined
@@ -459,13 +459,13 @@ object JohnnyFive extends js.Object {
     def on(event: String, cb: js.Function1[js.Any, Unit]): this.type = js.native
   }
 
-  @ScalaJSDefined
+  
   trait IMUGeneralOption extends js.Object {
     var controller: js.UndefOr[String] = js.undefined
     var freq: js.UndefOr[Double] = js.undefined
   }
 
-  @ScalaJSDefined
+  
   trait IMUMPU6050Option extends IMUGeneralOption {
     var address: js.UndefOr[Double] = js.undefined
   }
@@ -493,14 +493,14 @@ object JohnnyFive extends js.Object {
     def on(event: String, cb: js.Function1[js.Any, Unit]): this.type = js.native
   }
 
-  @ScalaJSDefined
+  
   trait ArrayOption extends js.Object {
     var pins: js.UndefOr[js.Array[Double] | js.Array[String]] = js.undefined
     var emitter: js.UndefOr[Double | String] = js.undefined
     var freq: js.UndefOr[Double] = js.undefined
   }
 
-  @ScalaJSDefined
+  
   trait LoadCalibrationOption extends js.Object {
     var min: js.UndefOr[js.Array[Double]] = js.undefined
     var max: js.UndefOr[js.Array[Double]] = js.undefined
@@ -526,7 +526,7 @@ object JohnnyFive extends js.Object {
     def on(event: String, cb: js.Function1[js.Any, Unit]): this.type = js.native
   }
 
-  @ScalaJSDefined
+  
   trait JoystickOption extends js.Object {
     var pins: js.UndefOr[js.Array[String]] = js.undefined
     var invert: js.UndefOr[Boolean] = js.undefined
@@ -556,19 +556,19 @@ object JohnnyFive extends js.Object {
     def on(event: String, cb: js.Function2[Error, Date, Unit]): this.type = js.native
   }
 
-  @ScalaJSDefined
+  
   trait LCDGeneralOption extends js.Object {
     var rows: js.UndefOr[Double] = js.undefined
     var cols: js.UndefOr[Double] = js.undefined
   }
 
-  @ScalaJSDefined
+  
   trait LCDI2COption extends LCDGeneralOption {
     var controller: js.UndefOr[String] = js.undefined
     var backlight: js.UndefOr[Double] = js.undefined
   }
 
-  @ScalaJSDefined
+  
   trait LCDParallelOption extends LCDGeneralOption {
     var pins: js.UndefOr[js.Array[js.Any]] = js.undefined
     var backlight: js.UndefOr[Double] = js.undefined
@@ -611,7 +611,7 @@ object JohnnyFive extends js.Object {
     def bgColor(color: js.Any): Unit = js.native
   }
 
-  @ScalaJSDefined
+  
   trait LedOption extends js.Object {
     var pin: js.UndefOr[Double] = js.undefined
     var `type`: js.UndefOr[String] = js.undefined
@@ -655,7 +655,7 @@ object JohnnyFive extends js.Object {
   }
 
 
-  @ScalaJSDefined
+  
   trait DigitsOption extends js.Object {
     var pins: js.UndefOr[js.Any] = js.undefined
     var devices: js.UndefOr[Double] = js.undefined
@@ -693,13 +693,13 @@ object JohnnyFive extends js.Object {
     def draw(index: Double, position: Double, character: Double): Unit = js.native
   }
 
-  @ScalaJSDefined
+  
   trait MatrixOption extends js.Object {
     var pins: js.UndefOr[js.Array[Pin]] = js.undefined
     var devices: js.UndefOr[Double] = js.undefined
   }
 
-  @ScalaJSDefined
+  
   trait MatrixIC2Option extends js.Object {
     var controller: js.UndefOr[String] = js.undefined
     var addresses: js.UndefOr[js.Array[js.Any]] = js.undefined
@@ -748,7 +748,7 @@ object JohnnyFive extends js.Object {
     def draw(index: Double, position: Double, character: Double): Unit = js.native
   }
 
-  @ScalaJSDefined
+  
   trait RGBOption extends js.Object {
     var pins: js.UndefOr[js.Array[Double]] = js.undefined
     var isAnode: js.UndefOr[Boolean] = js.undefined
@@ -787,7 +787,7 @@ object JohnnyFive extends js.Object {
   }
 
 
-  @ScalaJSDefined
+  
   trait MotionOption extends js.Object {
     var pin: js.UndefOr[Double | String] = js.undefined
   }
@@ -801,7 +801,7 @@ object JohnnyFive extends js.Object {
     def on(event: String, cb: js.Function1[js.Any, Unit]): this.type = js.native
   }
 
-  @ScalaJSDefined
+  
   trait MotorOption extends js.Object {
     var pins: js.UndefOr[js.Any] = js.undefined
     var current: js.UndefOr[js.Any] = js.undefined
@@ -837,7 +837,7 @@ object JohnnyFive extends js.Object {
     def release(): Unit = js.native
   }
 
-  @ScalaJSDefined
+  
   trait OrientiationOption extends js.Object {
     var controller: js.UndefOr[String] = js.undefined
     var freq: js.UndefOr[Double] = js.undefined
@@ -856,7 +856,7 @@ object JohnnyFive extends js.Object {
     def on(event: String, cb: js.Function1[js.Any, Unit]): this.type = js.native
   }
 
-  @ScalaJSDefined
+  
   trait PiezoOption extends js.Object {
     var pin: js.UndefOr[Double] = js.undefined
   }
@@ -883,31 +883,31 @@ object JohnnyFive extends js.Object {
     def off(): Unit = js.native
   }
 
-  @ScalaJSDefined
+  
   trait PingOption extends js.Object {
     var pin: js.UndefOr[Double | String] = js.undefined
     var freq: js.UndefOr[Double] = js.undefined
     var pulse: js.UndefOr[Double] = js.undefined
   }
 
-  @ScalaJSDefined
+  @js.native
   class Ping protected() extends js.Object {
     def this(option: Double | PingOption) = this()
   }
 
-  @ScalaJSDefined
+  
   trait ProximityOption extends js.Object {
     var pin: js.UndefOr[Double | String] = js.undefined
     var controller: js.UndefOr[String] = js.undefined
   }
 
-  @ScalaJSDefined
+  
   trait ProximityData extends js.Object {
     var cm: js.UndefOr[Double] = js.undefined
     var in: js.UndefOr[Double] = js.undefined
   }
 
-  @ScalaJSDefined
+  @js.native
   class Proximity protected() extends js.Object {
     def this(option: Double | ProximityOption) = this()
 
@@ -916,7 +916,7 @@ object JohnnyFive extends js.Object {
     def on(event: String, cb: js.Function1[ProximityData, Unit]): this.type = js.native
   }
 
-  @ScalaJSDefined
+  
   trait RelayOption extends js.Object {
     var pin: js.UndefOr[Double | String] = js.undefined
     var `type`: js.UndefOr[String] = js.undefined
@@ -945,7 +945,7 @@ object JohnnyFive extends js.Object {
     def inject(`object`: js.Any): Unit = js.native
   }
 
-  @ScalaJSDefined
+  
   trait SensorOption extends js.Object {
     var pin: js.UndefOr[Double | String] = js.undefined
     var freq: js.UndefOr[Boolean] = js.undefined
@@ -987,7 +987,7 @@ object JohnnyFive extends js.Object {
     def on(event: String, cb: js.Function1[js.Any, Unit]): this.type = js.native
   }
 
-  @ScalaJSDefined
+  
   trait ServoGeneralOption extends js.Object {
     var pin:js.UndefOr[ Double | String] = js.undefined
     var range: js.UndefOr[js.Array[Double]] = js.undefined
@@ -998,12 +998,12 @@ object JohnnyFive extends js.Object {
     var controller: js.UndefOr[String] = js.undefined
   }
 
-  @ScalaJSDefined
+  
   trait ServoPCA9685Option extends ServoGeneralOption {
     var address: js.UndefOr[Double] = js.undefined
   }
 
-  @ScalaJSDefined
+  
   trait ServoSweepOpts extends js.Object {
     var range: js.UndefOr[js.Array[Double]] = js.undefined
     var interval: js.UndefOr[Double] = js.undefined
@@ -1054,7 +1054,7 @@ object JohnnyFive extends js.Object {
     def on(event: String, cb: js.Function0[Unit]): this.type = js.native
   }
 
-  @ScalaJSDefined
+  
   trait ShiftRegisterOption extends js.Object {
     var pins: js.UndefOr[js.Any] = js.undefined
     var isAnode: js.UndefOr[Boolean] = js.undefined
@@ -1080,7 +1080,7 @@ object JohnnyFive extends js.Object {
     def send(value: Double*): Unit = js.native
   }
 
-  @ScalaJSDefined
+  
   trait SonarOption extends js.Object {
     var pin: js.UndefOr[Double | String] = js.undefined
     var device: js.UndefOr[String] = js.undefined
@@ -1101,7 +1101,7 @@ object JohnnyFive extends js.Object {
     def on(event: String, cb: js.Function1[js.Any, Unit]): this.type = js.native
   }
 
-  @ScalaJSDefined
+  
   trait StepperOption extends js.Object {
     var pins: js.UndefOr[js.Any] = js.undefined
     var stepsPerRev: js.UndefOr[Double] = js.undefined
@@ -1110,11 +1110,11 @@ object JohnnyFive extends js.Object {
     var direction: js.UndefOr[Double] = js.undefined
   }
 
-
-  @ScalaJSDefined
+/*
+  
   class TYPE extends js.Object {
   }
-
+*/
   @js.native
   object TYPE extends js.Object {
     var DRIVER: Double = js.native
@@ -1162,7 +1162,7 @@ object JohnnyFive extends js.Object {
     def on(event: String, cb: js.Function1[js.Any, Unit]): this.type = js.native
   }
 
-  @ScalaJSDefined
+  
   trait SwitchOption extends js.Object {
     var pin: js.UndefOr[Double | String] = js.undefined
     var `type`: js.UndefOr[String] = js.undefined
@@ -1182,7 +1182,7 @@ object JohnnyFive extends js.Object {
     def on(event: String, cb: js.Function0[Unit]): this.type = js.native
   }
 
-  @ScalaJSDefined
+  
   trait ThermometerOption extends js.Object {
     var controller: js.UndefOr[String] = js.undefined
     var pin: js.UndefOr[String | Double] = js.undefined

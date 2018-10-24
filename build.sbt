@@ -5,7 +5,7 @@ name := "JohnnyFiveScala.js"
 
 normalizedName := "johnny5scala-js"
 
-version := "0.0.1"
+version := "0.0.2-SNAPSHOT"
 
 organization := "com.zeiss"
 
@@ -25,3 +25,4 @@ publishMavenStyle := true
 
 licenses += ("Apache 2", url("https://www.apache.org/licenses/LICENSE-2.0.txt"))
 
+enablePlugins(DockerPlugin)
